@@ -31,8 +31,7 @@ const Edit = () => {
 		}
 	};
 
-	const editCard = (e) => {
-		e.preventDefault();
+	const editCard = () => {
 		fetch(`/editcard`, {
 			method: 'PUT',
 			headers: {
@@ -89,7 +88,7 @@ const Edit = () => {
 	return (
 		<div className='wrapper'>
 			<div className='form'>
-				<form onSubmit={handleSubmit}>
+				<form>
 					<div class='form-group'>
 						<input
 							type='text'
@@ -188,7 +187,7 @@ const Edit = () => {
 						type='submit'
 						style={{ width: '100%' }}
 						class='btn btn-success'
-						onClick={(e) => editCard(e)}
+						onClick={(e) => handleSubmit(e)}
 					>
 						Edit Card
 					</button>

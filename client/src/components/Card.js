@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 const Card = (props) => {
 	const cardData = props.cardData;
@@ -48,11 +48,11 @@ const Card = (props) => {
 				<h6 className='card-text'>
 					Business Name: {cardData.businessname}
 				</h6>
+				<h6 className='card-text'>Address: {cardData.singleaddress}</h6>
 				<h6 className='card-text'>
 					WhatsApp: {cardData.whatsappnumber}
 				</h6>
 				<h6 className='card-text'>Contact: {cardData.contacts}</h6>
-				<h6 className='card-text'>Address: {cardData.singleaddress}</h6>
 
 				<div className='buttons'>
 					<Link
