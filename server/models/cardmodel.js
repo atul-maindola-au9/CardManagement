@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Cardschema = new mongoose.Schema({
+const CardSchema = new mongoose.Schema({
 	personname: {
 		type: String,
 		trim: true,
@@ -35,5 +35,5 @@ const Cardschema = new mongoose.Schema({
 	},
 });
 
-const Card = new mongoose.model('Cards', Cardschema);
+const Card = new mongoose.model('Cards', CardSchema);
 module.exports = Card;
