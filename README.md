@@ -2,7 +2,7 @@
 
 ##Steps to execute this project
 
-###step 1
+###Step 1
 
 Download the zip file and extract it
 
